@@ -3,7 +3,7 @@
 // Cálculo de IMC
 
 const nome = 'Maicon'
-const peso = 65
+const peso = 64
 const altura = 1.75
 
 
