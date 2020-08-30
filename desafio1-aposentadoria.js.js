@@ -2,29 +2,20 @@
 
 // Cálculo de aposentadoria
 
+
 const nome = 'Maria'
 const sexo = 'F'
-const constribuicao = 30
-const idade = 50
+const idade = 55
+const contribuicao = 30
 
-const condicao1 = (constribuicao)
-const condicao2 = (idade)
+const  calculoContribuicao  =  idade  +  contribuicao
 
+// essas variáveis ​​irão retornar verdadeiro ou falso
+const homemPodeAposentar = sexo == 'M' && contribuicao >= 35 && calculoContribuicao >= 95
+const mulherPodeAposentar = sexo == 'F' && contribuicao >= 30 && calculoContribuicao >= 85
 
-/*================================================================================
-    > O tempo de contribuição mínimo para homens é 
-        de 35 anos e, para mulheres, 30 anos
-    > Utilizando a regra 85-95, a soma da idade 
-        com o tempo de contribuição do homem precisa ser de no mínimo 95 anos, 
-        enquanto a mulher precisa ter no mínimo 85 anos na soma;
-================================================================================*/
-
-if (condicao1 >= 30) {
-    if (condicao2 >= 55) {
-      console.log('Maria, você pode se aposentar')
-    } else {
-      console.log('Maria, você ainda não pode se aposentar')
-    }
-  } else {
-    console.log('Maria, falta tempo de contribuicao')
-  }
+if  (homemPodeAposentar || mulherPodeAposentar)  {
+    console.log(`${nome}, você pode se aposentar!`)
+}  else  {
+    console.log(`${nome }, você não pode se aposentar!`)
+}
