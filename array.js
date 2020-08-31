@@ -2,7 +2,7 @@
 
 const programador = {
     nome: "Aline",
-    idade: 25,
+    idade: 26,
     tecnologias: [
         {nome: 'JavaScript', especialidade: 'Desktop'}, 
         {nome: 'JavaScript', especialidade: 'Web/Mobile'}
