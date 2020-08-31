@@ -5,7 +5,7 @@
 
 const nome = 'Maria'
 const sexo = 'F'
-const idade = 56
+const idade = 55
 const contribuicao = 30
 
 const  calculoContribuicao  =  idade  +  contribuicao
